@@ -1,13 +1,23 @@
 body {
+  min-height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin-top: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/*
+
+Para a lista:
+font-family: Chivo;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+
+Para o Título
+font-family: Chivo;
+font-style: normal;
+font-weight: normal;
+font-size: 72px;
+line-height: 86px;
+
+*/
