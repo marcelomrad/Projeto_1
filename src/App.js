@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import Caixa from "./componentes/caixa";
-import Header from "./componentes/header";
+import Caixa from "./componentes/Caixa/Caixa";
+import Header from "./componentes/Header/Header";
 
 function App() {
   return (

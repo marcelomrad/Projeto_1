@@ -1,7 +1,7 @@
 import React from "react";
-import Checkbox from "./Checkbox.js";
-import "./item.css";
-import RemoveItem from "./RemoveItem.js";
+import Checkbox from "../Checkbox.js";
+import "./Item.css";
+import RemoveItem from "../RemoveItem.js";
 
 export default function Item(props) {
   return (
