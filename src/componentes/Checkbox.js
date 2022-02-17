@@ -1,5 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function Checkbox() {
-  return <input type="checkbox" />;
+export default function Checkbox(props) {
+  
+
+
+  return (
+    <>
+     {/* <input onClick = {()=>props.setCheck(!props.check)} type="checkbox" /> */}
+     
+    </>
+  )
 }
