@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Item.css";
-import RemoveIcon from "../../imagem/xizinho.png";
+import RemoveIcon from "../../imagem/remove.png";
 
 export default function Item() {
   const [check, setCheck] = useState(false);

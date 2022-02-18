@@ -1,5 +1,5 @@
 import React from "react";
-import AddIcon from "../../imagem/outline_add_circle_outline_black_24dp.png";
+import AddIcon from "../../imagem/add.png";
 import "./Item.css";
 export default function AddItem(props) {
   function AdicionaItem() {

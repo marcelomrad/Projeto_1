@@ -11,7 +11,9 @@ export default function Itens({row}) {
   }
   return (
     <>
+    <div style={{paddingTop: "5px"}}>
       {creatRows()}
+    </div>
     </>
   );
 }

@@ -9,7 +9,7 @@ export default function Box() {
   const [row, setRow] = useState(1);
 
   return (
-    <div className="box">
+    <div>
       <Itens row={row} />
       <AddItem row={row} setRow={setRow} />
     </div>
