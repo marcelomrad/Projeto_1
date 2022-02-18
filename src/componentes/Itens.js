@@ -5,14 +5,14 @@ export default function Itens(props) {
   function creatRows() {
     let rows = [];
     for (let i = 0; i < props.row; i++) {
-      rows.push(<Item > </Item>);
+      rows.push(<Item props={props}> </Item>);
     }
     return rows;
   }
   return (
     <>
       {/* <p>{props.row}</p> */}
-      
+
       {creatRows()}
     </>
   );

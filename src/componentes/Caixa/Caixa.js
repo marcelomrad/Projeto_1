@@ -10,7 +10,7 @@ export default function Caixa() {
 
   return (
     <div class="box">
-      <Itens row={row} />
+      <Itens row={row} setRow={setRow} />
       <AddItem setRow={setRow} row={row} />
     </div>
   );
