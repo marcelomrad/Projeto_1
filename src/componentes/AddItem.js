@@ -6,5 +6,5 @@ export default function AddItem(props) {
     props.setRow(props.row + 1);
   }
 
-  return <img src={AddIcon} alt="imagem" onClick={() => AdicionaItem()}></img>;
+  return <img style={{paddingLeft: "30px", paddingTop: "30px",}} src={AddIcon} alt="imagem" onClick={() => AdicionaItem()}></img>;
 }
