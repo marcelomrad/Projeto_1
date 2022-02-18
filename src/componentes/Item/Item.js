@@ -1,26 +1,33 @@
-import React, {useState} from "react";
-import Checkbox from "../Checkbox.js";
+import React, { useState } from "react";
 import "./Item.css";
-import RemoveItem from "../RemoveItem.js";
-import { getByText } from "@testing-library/react";
+import RemoveIcon from "../../imagem/xizinho.png";
 
 export default function Item() {
-  
   const [check, setCheck] = useState(false);
 
   const [removed, setRemoved] = useState(false);
-  
+
   return (
-    
-     <div class="item" style={removed? {display:"none"} : {display:""}}>
+    <div class="item" style={removed ? { display: "none" } : { display: "" }}>
+      <input onClick={() => setCheck(!check)} type="checkbox" />
 
-      <input onClick = {()=>setCheck(!check)} type="checkbox" /> 
+      <input
+        type="text"
+        class="formulario"
+        maxlength="50"
+        style={
+          check
+            ? { textDecorationLine: "line-through" }
+            : { textDecorationLine: "none" }
+        }
+      ></input>
 
-      <input type="text" class="formulario" style={check? {textDecorationLine:"line-through"} : {textDecorationLine:"none"}} ></input>
-
-      <button onClick={()=>setRemoved(!removed)}>Remover Item</button>
+      <img
+        style={{ height: 15 }}
+        src={RemoveIcon}
+        alt="x"
+        onClick={() => setRemoved(!removed)}
+      ></img>
     </div>
-    
-   
   );
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import "./Caixa.css";
 import "../Item/Item.js";
-import "../Checkbox.js";
 import AddItem from "../AddItem";
 import Itens from "../Itens";
 import { useState } from "react";
