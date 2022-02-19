@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import "./Item.css";
 import RemoveIcon from "../../imagem/remove.png";
 
-export default function Item() {
+export default function Item(props) {
   const [check, setCheck] = useState(false);
 
   const [removed, setRemoved] = useState(false);
+
+ 
+
   return (
     <div className="item" style={removed ? { display: "none" } : { display: "" }}>
       <input onClick={() => setCheck(!check)} type="checkbox" />
@@ -25,7 +28,7 @@ export default function Item() {
         style={{ height: 15 }}
         src={RemoveIcon}
         alt="x"
-        onClick={() => {setRemoved(true) }}
+        onClick={() => setRemoved(!removed)}
       ></img>
     </div>
   );
