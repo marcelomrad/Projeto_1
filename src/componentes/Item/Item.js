@@ -1,17 +1,24 @@
 import React, { useState } from "react";
 import "./Item.css";
 import RemoveIcon from "../../imagem/remove.png";
+import checkOn from "../../imagem/checkOn.png";
+import checkOff from "../../imagem/checkOff.png";
 
 export default function Item(props) {
   const [check, setCheck] = useState(false);
 
   const [removed, setRemoved] = useState(false);
 
- 
+  const [checked, setchecked] = useState(false);
 
   return (
     <div className="item" style={removed ? { display: "none" } : { display: "" }}>
-      <input onClick={() => setCheck(!check)} type="checkbox" />
+      <img
+        style={{ height: 23 }}
+        src={checked ? checkOn : checkOff}
+        alt="check"
+        onClick={() => { setchecked(!checked); setCheck(!check)}}
+      ></img>
 
       <input
         type="text"
