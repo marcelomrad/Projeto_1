@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Item.css";
 import RemoveIcon from "../../imagem/remove.png";
 import checkOn from "../../imagem/checkOn.png";
-import checkOff from "../../imagem/checkOff.png";
+import checkOff from "../../imagem/chekOff.png";
 
 export default function Item(props) {
   const [check, setCheck] = useState(false);

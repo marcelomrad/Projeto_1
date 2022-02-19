@@ -7,6 +7,9 @@
   padding-top: 20px
 }
 .pointer { cursor: pointer; }
+
+.auto {cursor: auto;}
+
 .formulario {
   width: 300px;
   border: none;
@@ -17,10 +20,15 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
-  border-bottom: 1px solid black;
+ /*  border-bottom: 1px solid black; */
   width: 80%;
 }
 
 .texto {
   font-size: 39px;
+}
+
+.check{
+  width: 28px;
+  height: 24px;
 }
