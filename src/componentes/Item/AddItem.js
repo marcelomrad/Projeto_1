@@ -6,5 +6,5 @@ export default function AddItem(props) {
     props.setRow(props.row + 1);
   }
 
-  return <img className="item" src={AddIcon} alt="imagem" onClick={() => AdicionaItem()}></img>;
+  return <img className="item pointer" src={AddIcon} alt="imagem" onClick={() => AdicionaItem()}></img>;
 }

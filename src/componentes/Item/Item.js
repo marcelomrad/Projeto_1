@@ -12,7 +12,7 @@ export default function Item(props) {
   const [checked, setchecked] = useState(false);
 
   return (
-    <div className="item" style={removed ? { display: "none" } : { display: "" }}>
+    <div className="item pointer" style={removed ? { display: "none" } : { display: "" }}>
       <img
         style={{ height: 23 }}
         src={checked ? checkOn : checkOff}
@@ -22,7 +22,7 @@ export default function Item(props) {
 
       <input
         type="text"
-        className="formulario"
+        className="formulario pointer"
         maxLength="50"
         style={
           check
@@ -32,6 +32,7 @@ export default function Item(props) {
       ></input>
 
       <img
+        className="pointer"
         style={{ height: 15 }}
         src={RemoveIcon}
         alt="x"
