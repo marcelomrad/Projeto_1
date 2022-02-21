@@ -1,5 +1,4 @@
 import React from "react";
-import "./Box.css";
 import "../Item/Item.js";
 import AddItem from "../Item/AddItem";
 import Item from "../Item/Item.js";
