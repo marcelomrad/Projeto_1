@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Item.css";
 import RemoveIcon from "../../imagem/remove.svg";
 import checkOff from "../../imagem/checkOff.svg";
@@ -9,17 +9,15 @@ export default function Item() {
 
   const [removed, setRemoved] = useState(false);
 
-  const [checkedIcon, setcheckedIcon] = useState(false);
-
   return (
     <div className="item pointer" style={removed ? { display: "none" } : { display: "" }}>
-      
+
        <img
         style={{ height: 20, margin: 2 }}
-        src={checkedIcon ? checkOn : checkOff}
+        src={check ? checkOn : checkOff}
         alt="check"
-        onClick={() => {setcheckedIcon(!checkedIcon); setCheck(!check)}}
-      ></img> 
+        onClick={() => { setCheck(!check)}}
+      ></img>
 
       <input
         type="text"
