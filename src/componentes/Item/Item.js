@@ -22,7 +22,7 @@ export default function Item(props) {
 
       <input
         type="text"
-        className="formulario pointer"
+        className="formulario auto"
         maxLength="50"
         style={
           check
